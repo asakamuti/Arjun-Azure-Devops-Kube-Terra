@@ -19,9 +19,9 @@ jobs:
       echo See https://aka.ms/yaml
     displayName: 'Run a multi-line script'
     
-- job: job1
+- job: job2
   steps:
-  - script: echo Hello, world! Corona
+  - script: echo Job2
     displayName: 'Run a one-line script'
 
   - script: |
