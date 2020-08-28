@@ -9,7 +9,7 @@ stages:
   - job: FirstJob
     steps:
     - bash: echo Build FirstJob
-    - bash: ${PipeLineLevelVariable}
+    - bash: echo ${PipeLineLevelVariable}
   - job: SecondJob
     steps:
     - bash: echo Build SecondJob
@@ -27,7 +27,7 @@ stages:
   jobs:
   - job: QADeployJob
     steps:
-    - bash: echo $(environment) QADeployJob
+    - bash: echo $(environment)QADeployJob
  
 - stage: ProdDeploy
   variables: 
@@ -35,5 +35,5 @@ stages:
   jobs:
   - job: ProdDeployJob
     steps:
-    - bash: echo $(environment) ProdDeployob
+    - bash: echo $(environment)ProdDeployob
   
